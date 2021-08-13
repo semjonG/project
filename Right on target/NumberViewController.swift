@@ -64,7 +64,7 @@ class NumberViewController: UIViewController {
     
 //    отображение всплывающего окна со счетом
     private func showAlertWith(score: Int) {
-        let alert = UIAlertController(title: "Game over", message: "You earned \(score) points", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Game end", message: "You earned \(score) points", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Start new game", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
