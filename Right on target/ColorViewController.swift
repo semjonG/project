@@ -52,7 +52,7 @@ class ColorViewController: UIViewController {
         // Проверяем, окончена ли игра
         if game.isGameEnded {
             // Показываем окно с итогами
-            showAlertWith(score: game.score)
+            game.restartGame()
             // Рестартуем игру
             game.restartGame()
         } else {
